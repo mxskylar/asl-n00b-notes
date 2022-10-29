@@ -8,6 +8,9 @@
 .vocab h5 { 
 	margin-bottom: -30px;
 }
+.vocab a {
+  font-size: 10px;
+}
 .vocab pre {
   margin-bottom: 40px;
 }
