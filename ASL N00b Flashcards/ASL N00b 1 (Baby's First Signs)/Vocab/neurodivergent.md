@@ -1,5 +1,5 @@
 ---
-cards-deck: ASL N00b Flashcards::ASL N00b 1 (Baby's First Signs)
+cards-deck: ASL N00b Flashcards::ASL N00b 1::Vocab (Baby's First Signs)
 tags: asl-flashcard, vocab, identities, neurodivergence
 cssclass: "flashcard vocab"
 ---
@@ -19,4 +19,4 @@ note
 note
 ```
 #card-spaced
-^1667015273458
+^1667076345933
