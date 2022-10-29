@@ -1,3 +1,7 @@
+---
+cssclass: flashcard
+---
+
 ###### Question
 ![[sign_.gif]]
 ###### Hint

@@ -1,13 +1,13 @@
 /** Hide file name header **/
-.inline-title {
+.flashcard .inline-title {
   display: none;
 }
-button.toggle {
+.vocab button.toggle {
   display: none;
 }
-.markdown-rendered h5 { 
+.vocab h5 { 
 	margin-bottom: -30px;
 }
-pre {
+.vocab pre {
   margin-bottom: 40px;
 }
