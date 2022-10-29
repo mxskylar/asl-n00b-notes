@@ -4,19 +4,18 @@ tags: identities, neurodivergence
 ---
 
 # Neurodivergent
-<button class="toggle" id="variation-1" onclick="toggleVariation(this)">Variation 1</button>
+##### Variation 1
+<button class="toggle" id="variation-1" onclick="toggleVariation(this)">Show Sign</button>
 ![[sign_.gif]]
 [TikTok](https://tiktok.com)
 ```
 note
 ```
-<button class="toggle" id="variation-2"  onclick="toggleVariation(this)">Variation 2</button>
+##### Variation 2
+<button class="toggle" id="variation-2"  onclick="toggleVariation(this)">Show Sign</button>
 ![[sign_ABBREVIATE.gif]]
 ```
 note
 ```
 #card-spaced
 ^1667015273458
-
-Date now: <% tp.date.now() %>
-<!--<% tp.user.my_function("dd") %>-->
