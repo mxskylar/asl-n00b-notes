@@ -8,7 +8,7 @@
 .vocab h5 { 
 	margin-bottom: -30px;
 }
-.vocab a {
+.vocab a:not(.tag) {
   font-size: 10px;
 }
 .vocab pre {
