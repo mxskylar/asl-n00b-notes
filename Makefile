@@ -21,4 +21,4 @@ setup:
 .PHONY: flashcards
 flashcards:
 	@[[ ! -z "$(DECK)" ]] || (echo "DECK must be defined. Run make DECK='my deck'"; exit 1)
-	python3 import-flashcards.py -i "$(IMPORT_DIR)" -a "$(ANKI_MEDIA_DIR)" -f "ASL N00b" "$(DECK)"
+	python3 import-flashcards.py --import-folder "$(IMPORT_DIR)" --anki-media-folder "$(ANKI_MEDIA_DIR)" --flashcard-template "Flashcard Template.md" --new-sign-template "New Sign Template.md" --flashcard-folders "ASL N00b Flashcards" "$(DECK)"

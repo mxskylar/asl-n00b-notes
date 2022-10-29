@@ -1,0 +1,8 @@
+/** Hide file name header **/
+.inline-title {
+  display: none;
+}
+button.toggle {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
