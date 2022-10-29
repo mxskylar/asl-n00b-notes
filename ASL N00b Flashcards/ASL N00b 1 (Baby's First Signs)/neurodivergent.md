@@ -1,6 +1,6 @@
 ---
 cards-deck: ASL N00b Flashcards::ASL N00b 1 (Baby's First Signs)
-tags: identities, neurodivergence
+tags: asl-flashcard, vocab, identities, neurodivergence
 cssclass: "flashcard vocab"
 ---
 
