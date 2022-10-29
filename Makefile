@@ -3,7 +3,7 @@ IMPORT_DIR := $(shell cat ./flashcards.properties | grep "import.dir" | cut -d '
 ANKI_MEDIA_DIR := $(shell cat ./flashcards.properties | grep "anki.media.dir" | cut -d '=' -f2 2> /dev/null)
 
 .PHONY: all
-all: flashcards
+all: vocab
 
 # Sets up project environment
 .PHONY: setup
@@ -17,8 +17,8 @@ setup:
 	cat ./flashcards.properties
 	@echo "Setup done!"
 
-# Imports and generates flashcards from CSV
-.PHONY: flashcards
-flashcards:
+# Imports and generates vocab flashcards from CSV
+.PHONY: vocab
+vocab:
 	@[[ ! -z "$(DECK)" ]] || (echo "DECK must be defined. Run make DECK='my deck'"; exit 1)
-	python3 import-flashcards.py --import-folder "$(IMPORT_DIR)" --anki-media-folder "$(ANKI_MEDIA_DIR)" --flashcard-template "Flashcard Template.md" --new-sign-template "New Sign Template.md" --flashcard-folders "ASL N00b Flashcards" "$(DECK)"
+	python3 import-flashcards.py --import-folder "$(IMPORT_DIR)" --anki-media-folder "$(ANKI_MEDIA_DIR)" --flashcard-template "Flashcard Template.md" --new-sign-template "Sign Template.md" --flashcard-folders "ASL N00b Flashcards" "$(DECK)"
