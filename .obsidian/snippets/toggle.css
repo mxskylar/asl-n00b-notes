@@ -5,3 +5,9 @@
 button.toggle {
   display: none;
 }
+.markdown-rendered h5 { 
+	margin-bottom: -30px;
+}
+pre {
+  margin-bottom: 40px;
+}
