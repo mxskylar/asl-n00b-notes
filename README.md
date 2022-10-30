@@ -1,71 +1,24 @@
-Markdown notes maintained in Obsidian for resources to learn ASL.
+# ASL N00b Notes
+Notes and [flashcards]()<!--TODO: Add link to shared Anki decks--> by an ASL n00b for ASL n00bs. I am a hearing ASL student who is creating notes and flashcards as I learn to sign. Take everything here with a grain of salt because I am **not** an ASL expert and I am **not** a native signer. If you are able to, I highly recommend taking ASL courses run by a Deaf or hard of hearing person at some point in your ASL learning journey. I personally recommend classes by [Queer ASL](https://www.queerasl.com/).
 
-The project requires Python 3 to import flashcards. To setup the environment for the project, run:
+My notes are written in markdown for [Obsidian](https://obsidian.md/) and shared via Git. You can download the notes if you have [Obsidian and Git installed](https://desktopofsamuel.com/how-to-sync-obsidian-vault-for-free-using-git). My flashcards are exported from this project to [Anki](https://apps.ankiweb.net/).
+
+## Generate Flashcards
+Once you have the project setup, follow the steps below to generate flashcards. Git commit hooks and template comments will prompt you on when to use the plugin to generate Anki flashcards.
+
+### Project Setup
+The [Flashcards](https://github.com/reuseman/flashcards-obsidian) plugin for Obsidian is used to generate flashcards in [Anki](./ANKI.md). Install the [community plugin](https://help.obsidian.md/Advanced+topics/Community+plugins) and make sure it is working correctly.
+
+This project also requires Python 3, Jinja, and custom configurations to generate flashcards. It also comes with version-controlled git hooks. To set all this up in your development environment for the project, run:
 ```bash
 make setup
 ```
 
-To import flashcards, pull a CSV in [this format](https://docs.google.com/spreadsheets/d/1wntkF6W-mNdyTxaEZI-RmvvdGeeDKY8iq9FHbYhtNog/edit?usp=sharing).
-Then, import the flashcards by running a target such as:
+### Vocab Flashcards
+To generate vocab flashcards, export a CSV in [this format](https://docs.google.com/spreadsheets/d/1wntkF6W-mNdyTxaEZI-RmvvdGeeDKY8iq9FHbYhtNog/edit?usp=sharing). Then, generate the flashcards into a sub-deck of `ASL N00b Flashcards` by passing the deck name to the following command:
 ```bash
-make asl-101-flashcards
+make DECK="ASL N00b 1 (Baby's First Signs)"
 ```
 
-## Anki Scripts & Style
-Cards exported to Anki have the following scripts and style.
-```js
-const htmlCollection = document.getElementsByTagName('*');
-
-function showSubsequentElements(elementToHide, elementsToShow) {
-	let beginShowing = false
-	for (const node of htmlCollection) {
-		const nodeType = typeof node.nodeName === 'string'
-			? node.nodeName.toLowerCase()
-			: null;
-		if (nodeType === 'button') {
-			beginShowing = elementToHide.id === node.id;
-		}
-		if (beginShowing && elementsToShow.includes(nodeType)) {
-			node.style.display = 'none';
-			node.style.display = 'revert';
-		}
-	}
-	elementToHide.style.display = 'none';
-}
-```
-
-```css
-h5 {
-	margin-top: 50px;
-}
-.toggle-button-padding {
-	visibility: hidden;
-}
-```
-
-### Card-Spaced Note Type
-```js
-function showSign(e) {
-	showSubsequentElements(e, ['img', 'a', 'pre']);
-}
-```
-
-```css
-a, img, pre {
-	display: none;
-}
-```
-
-### Card/Reverse Note Type
-```js
-function showTranscript(e) {
-	showSubsequentElements(e, ['a']);
-}
-```
-
-```css
-a {
-	pointer-events: none;
-	display: none;
-}
-```
+### Trivia Flashcards
+There is an [Obsidian template](https://help.obsidian.md/Plugins/Templates) for trivia flashcards. Create a new note in the `Trivia` folder for the appropriate deck and insert this template. Then, follow the instructions in the comments to fill out the remaining details for the card.
