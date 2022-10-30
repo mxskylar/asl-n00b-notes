@@ -36,11 +36,10 @@ function showSubsequentElements(elementToHide, elementsToShow) {
 
 ```css
 h5 {
-	margin-top: 40px;
-	margin-bottom: -30px;
+	margin-top: 50px;
 }
-button {
-	margin-top: 20px;
+.toggle-button-padding {
+	visibility: hidden;
 }
 ```
 
@@ -55,9 +54,6 @@ function showSign(e) {
 a, img, pre {
 	display: none;
 }
-a {
-	font-size: 12px;
-}
 ```
 
 ### Card/Reverse Note Type
@@ -70,7 +66,6 @@ function showTranscript(e) {
 ```css
 a {
 	pointer-events: none;
-	font-size: 13px;
 	display: none;
 }
 ```

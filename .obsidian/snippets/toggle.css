@@ -1,26 +1,7 @@
-/** ALL FLASHCARDS **/
 /** Hide file name header **/
 .flashcard .inline-title {
   display: none;
 }
-.flashcard button {
+button.toggle {
   display: none;
-}
-.flashcard h5 { 
-	margin-bottom: -30px;
-}
-
-/** VOCAB FLASHCARDS **/
-.vocab a:not(.tag) {
-  font-size: 12px;
-}
-.vocab pre {
-  margin-bottom: 40px;
-}
-
-/** TRIVIA FLASHCARDS **/
-.trivia a.internal-link {
-  display: inline-block;
-  margin-top: -100px;
-  margin-bottom: 15px;
 }
