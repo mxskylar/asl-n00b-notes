@@ -15,4 +15,4 @@ cssclass: flashcard trivia
 ![[sign_.gif]]
 ##### Transcript
 <button class="toggle" id="answer-transcript" onclick="showTranscript(this)"><span class="toggle-button-padding">👀</span><br/><span class="toggle-button-padding">⚑ ⚑ ⚑ ⚑ ⚑ </span>SHOW TRANSCRIPT<span class="toggle-button-padding"> ⚑ ⚑ ⚑ ⚑ ⚑</span><br /><span class="toggle-button-padding">👐</span></button>[[neurodivergent#Variation 2]] [[neurodivergent]] [[neurodivergent#Variation 1]]
-^1667075482126
+^1667162013047
