@@ -1,5 +1,7 @@
 # ASL N00b Notes
-Notes and [flashcards]()<!--TODO: Add link to shared Anki decks--> by an ASL n00b for ASL n00bs. I am a hearing ASL student who is creating notes and flashcards as I learn to sign. Take everything here with a grain of salt because I am **not** an ASL expert and I am **not** a native signer. If you are able to, I highly recommend taking ASL courses run by a Deaf or hard of hearing person at some point in your ASL learning journey. I personally recommend classes by [Queer ASL](https://www.queerasl.com/).
+Notes and [flashcards]()<!--TODO: Add link to shared Anki decks--> by an ASL n00b for ASL n00bs. I am a hearing ASL student who is creating notes and flashcards as I learn to sign. Take everything here with a grain of salt because I am **not** an ASL expert and I am **not** a native signer. 
+
+If you are able to, I highly recommend taking ASL courses taught by a Deaf or hard of hearing person at some point in your ASL learning journey. I personally recommend classes by [Queer ASL](https://www.queerasl.com/).
 
 My notes are written in markdown for [Obsidian](https://obsidian.md/) and shared via Git. You can download the notes if you have [Obsidian and Git installed](https://desktopofsamuel.com/how-to-sync-obsidian-vault-for-free-using-git). My flashcards are exported from this project to [Anki](https://apps.ankiweb.net/).
 
